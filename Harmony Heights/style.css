@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-heading: 70px;
+    --second-heading: 50px;
+    --third-heading: 24px;
+    --fourth-heading: 18px;
+    --paragraph: 16px;
+    --primary-color: #6C60E1;
+    --secondary-color: #000000;
+    --fill-text: #999999;
+    --side-menu-text: #9197B3;
+    --menu-tabs-text: #D3D0F6;
+    --icons: #00AC4F;
+}
+
+/* general styles */
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+}
+
+h2 {
+    color: var(--secondary-color);
+    font-size: var(--second-heading);
+}
+
+h3 {
+    color: var(--secondary-color);
+    font-size: var(--third-heading);
+}
+
+p {
+    color: var(--secondary-color);
+    font-size: var(--paragraph);
+}
+
+/* utilities */
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* main styling */
+
+.hero-container {
+    height: 100vh;
+    width: 100%;
+}
+
+.banner {
+    position: relative;
+    height: 80vh;
+    background-image: url(./assets/bg-main.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-block: 40px;
+    text-align: center;
+}
+
+.banner-items {
+    padding-block: 20px;
+}
+
+#talents {
+    height: 100%;
+}
+
+#sunglasses-girl {
+    height: 100%;
+}
+
+.cloud1 {
+    position: absolute;
+    height: 150px;
+    left: 25%;
+    top: 45%;
+}
+
+.cloud2 {
+    position: absolute;
+    height: 150px;
+    right: 22%;
+    top: 60%;
+}
+
+.launch-container {
+    gap: 20px;
+    text-align: center;
+    padding: 40px;
+}
+
+.card-container {
+    background-color: rgba(108, 96, 225, 0.1);
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    padding-inline: 100px;
+    padding-bottom: 50px;
+    margin-top: 100px;
+    background: url(./assets/card-bg.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.card {
+    height: 582px;
+    width: 554px;   
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 40px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+#card-guy {
+    position: absolute;
+}
+
+#card-cloud-1 {
+    position: absolute;
+    bottom: -80px;
+    right: -120px;
+    scale: 0.5;
+}
+
+#card-cloud-2 {
+    position: absolute;
+    scale: 0.6;
+    top: -80px;
+    right: -50px;
+}
+
+.card-shadow {
+    display: flex;
+    position: relative;
+    overflow: visible;
+}
+
+.shadow-1 {
+    position: absolute;
+    top: -200px;
+    left: -200px;
+}
+
+.shadow-2 {
+    position: absolute;
+    top: -200px;
+    left: 250px;
+    filter: blur(10px);
+}
+
+.card-left {
+    display: flex;
+}
+
+.card-right {
+    gap: 40px;
+}
+
+.angle-1 {
+    height: 60px;
+    width: 60px;
+    background-color: rgba(108, 96, 225, 1);
+    position: relative;
+    top: -29px;
+    left: 41px;
+    rotate: 30deg;
+    clip-path: polygon(0% 0%, 100% 29%, 0% 86%);
+}
+
+.angle-2 {
+    height: 60px;
+    width: 60px;
+    background-color: rgba(108, 96, 225, 1);
+    position: relative;
+    top: -29px;
+    right: 41px;
+    rotate: -30deg;
+    transform: rotateY(180deg);
+    z-index: -1;
+    clip-path: polygon(0% 0%, 100% 29%, 0% 86%);
+}
+
+.card-right h2:nth-child(1) {
+    color: var(--primary-color);
+}
+
+.main-guitar {
+    padding: 80px;
+    gap: 40px;
+    text-align: center;
+}
+
+.guitar-section {
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-inline: 100px;
+}
+
+.guitar-1-card {
+    text-align: center;
+    padding-block: 30px;
+}
+
+.guitar{
+    text-align: center;
+}
+
+#guitar-girl-img {
+    scale: 0.9;
+}
+
+.guitar-1-card h3 {
+    font-weight: 600;
+}
+
+.mini-paragraph p {
+    font-size: var(--third-heading);
+}
+
+.mini-paragraph span {
+    font-weight: bold;
+}
+
+.harmony-div {
+    position: relative;
+    padding-block: 40px;
+}
+
+#harmony-cloud {
+    position: absolute;
+    left: 7%;
+    top: -10%;
+    scale: 0.8;
+}
+
+#harmony-dots {
+    position: absolute;
+    right: 6%;
+    top: 15%;
+}
+
+.last-section {
+    height: 140vh;
+    background-image: url(./assets/bg-last-final.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+#last-image {
+    position: absolute;
+    top: 110px;
+}
+
+.last-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 40px;
+    gap: 20px;
+}
+
+.last-heading p {
+    font-size: var(--second-heading);
+}
+
+.last-heading span {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.last-reach-out h3{
+    font-weight: 500;
+}
+
+.last-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-1 p {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+#logo-email {
+    text-decoration: underline;
+}
+
+.bottom-heading p {
+    font-size: var(--second-heading);
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.bottom-heading span {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.footer {
+    height: 10vh;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 80px;
+    color: white;
+}
+
+.footer-text p{
+    font-size: var(--fourth-heading);
+}
+
+.footer-logo {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-logo img{
+    scale: 0.8;
+}
